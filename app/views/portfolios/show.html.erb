@@ -2,20 +2,23 @@
 
 <%= image_tag @portfolio_item.main_image %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio_item.title %>
-</p>
+<h1>
+	<%= @portfolio_item.title %>
+</h1>
+
+<em>
+	<%= @portfolio_item.subtitle %>
+</em>
 
 <p>
-  <strong>Subtitle:</strong>
-  <%= @portfolio_item.subtitle %>
+	<%= @portfolio_item.body %>
 </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @portfolio_item.body %>
-</p>
+<h2>Technologies Used: </h2>
+
+<% @portfolio_item.technologies.each do |t| %>
+	<p><%= t.name %></p>
+<% end %>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %> |
 <%= link_to 'Back', portfolios_path %>

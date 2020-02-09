@@ -1,3 +1,11 @@
+3.times do |topic|
+	Topic.create!(
+		title: "Topic #{topic}"
+	)
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
 	Blog.create!(
 		title: "My blog post #{blog}",
@@ -14,7 +22,8 @@
 		See to it that he finds his way here. 
 		Calrissian, take the princess and the Wookiee to my ship. 
 		You said they'd be left in the city under my supervision. I am altering the deal. 
-		Pray I don't alter it any further."
+		Pray I don't alter it any further.",
+		topic_id: Topic.last.id
 	)
 end
 
@@ -29,10 +38,22 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+7.times do |portfolio_item|
 	Portfolio.create!(
 		title: "Portfolio title #{portfolio_item}",
-		subtitle: "My great service",
+		subtitle: "Ruby on Rails",
+		body: "Ready for some power? Okay. Let's see now. 
+		Put that in there. There you go. 
+		Now all I have to do is find this Yoda...if he even exists.",
+		main_image: "https://source.unsplash.com/random/600x400",
+		thumb_image:"https://source.unsplash.com/random/350x200" 
+	)
+end
+
+2.times do |portfolio_item|
+	Portfolio.create!(
+		title: "Portfolio title #{portfolio_item}",
+		subtitle: "Angular",
 		body: "Ready for some power? Okay. Let's see now. 
 		Put that in there. There you go. 
 		Now all I have to do is find this Yoda...if he even exists.",
@@ -42,3 +63,12 @@ puts "5 skills created"
 end
 
 puts "9 portfolios created"
+
+3.times do |technology|
+	Technology.create!(
+		name: 'Technology #{technology}',
+		portfolio_id: Portfolio.last.id
+	)
+end
+
+puts "3 technologies created"
