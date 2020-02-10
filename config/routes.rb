@@ -1,5 +1,8 @@
 Rails.application.routes.draw do  
   
+  # Auth routes  
+  devise_for :users
+  
   #Resources
   resources :portfolios, except: [:show]
 
