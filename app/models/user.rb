@@ -11,6 +11,6 @@ class User < ApplicationRecord
   end
 
   def last_name
-  	self.name.split.first
+  	self.name.split.last
   end
 end
