@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   	end
   end
 
+  # root path
   root to: 'pages#home' 
 end
