@@ -15,6 +15,10 @@ module ApplicationHelper
     		content_tag(:p, greeting, class: "source-greeting")
     	end
 	end
+
+	def copyright_generator
+		MooreViewTool::Renderer.copyright('Mitchell Moore', 'All rights reserved')
+	end
 end
 
 	

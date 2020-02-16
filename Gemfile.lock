@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/MrMitchellMoore/moore_view_tool
+  revision: 6cb5a179482024e90f6b307ab85ba82034543c45
+  specs:
+    moore_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -251,6 +257,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  moore_view_tool!
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)

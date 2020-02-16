@@ -30,6 +30,8 @@ gem 'bootstrap', '~> 4.4.1'
 # font-awesome support
 gem "font-awesome-rails"
 
+gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
+
 # Ruby and ruby on rails syntax support gem
 gem 'solargraph', group: :development
 
