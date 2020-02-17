@@ -29,7 +29,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap', '~> 4.4.1'
 # font-awesome support
 gem "font-awesome-rails"
+# Authorization simplified
+gem 'petergate', '~> 2.0', '>= 2.0.1'
 
+# Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
 # Ruby and ruby on rails syntax support gem
