@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= @page_title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
@@ -10,19 +11,34 @@
     <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'app', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
   </head>
 
   <body>
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav", location: "bottom" %>
-    
-    <%= login_helper %>
-    
-    <%= yield %>
-    
-    <%= source_helper("blog") %>
-
+    <p class="alert"><%= alert %></p> 
+      
+      <div class="container">
+        <%= render "shared/blogs_nav" %>
+        
+        <%= yield %>
+        
+        <%= source_helper("blog") %>  
+      </div>        
+      <%= render "shared/blog_footer" %>  
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
   </body>
 </html>
+
+
+      
+
+      
+    
