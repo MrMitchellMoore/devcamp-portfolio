@@ -43,8 +43,6 @@
         </div>
       </div>
 
-
-
 <main role="main">
   <div class="row">
     <div class="col-md-8 blog-main">
@@ -52,14 +50,18 @@
     </div><!-- /.blog-post -->
     <%= render "shared/blog_sidebar" %> <!-- /.blog-sidebar -->
   </div><!-- /.row -->
-        
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
+  
+  <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><%= link_to_prev_page @blogs, 'Prev', class: "page-link" %></li>
+    <li class="page-item"><%= link_to_next_page @blogs, 'Next', class: "page-link" %></li>
+  </ul>
+</nav>
       
 </main><!-- /.main -->
 
 <br>
 
-
+<!-- <a class="btn btn-outline-primary" href="#">Older</a>
+<a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+ -->

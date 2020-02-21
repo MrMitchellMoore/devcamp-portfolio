@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.order(:created_at).page(params[:page]).per(2)
     @page_title = "My Porfolio Blog"
   end
 

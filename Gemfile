@@ -31,7 +31,8 @@ gem 'bootstrap', '~> 4.4.1'
 gem "font-awesome-rails"
 # Authorization simplified
 gem 'petergate', '~> 2.0', '>= 2.0.1'
-
+# Kaminari Pagination gem
+gem 'kaminari', '~> 1.2'
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
