@@ -1,13 +1,9 @@
 <header class="masthead mb-auto">
     <div class="inner">	
 		<h3 class="masthead-brand">Mitchell Moore</h3>
-		<nav class="nav nav-masthead justify-content-center">
-			<%= link_to "Home", root_path, class: active_class(root_path) %> 
-		    <%= link_to "About", about_me_path, class: active_class(about_me_path)  %>
-		    <%= link_to "Contact", contact_path, class: active_class(contact_path) %>
-		    <%= link_to "Blogs", blogs_path, class: active_class(blogs_path) %>
-		    <%= link_to "Portfolio", portfolios_path, class: active_class(portfolios_path) %>
-		    <%= login_helper %>
+		<nav class="nav nav-masthead justify-content-center app-nav">
+			<%= nav_helper 'nav-link', 'span' %>
+		    <%= login_helper 'nav-link' %>
 		</nav>
 	</div>
 </header>
