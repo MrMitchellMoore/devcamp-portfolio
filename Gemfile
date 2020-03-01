@@ -5,34 +5,52 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+
 # jQuery and jQuery-rails
 gem 'jquery-rails'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
 # gem for friendly_id
 gem 'friendly_id', '~> 5.2.4'
+
 # Devise gem for authentication
 gem 'devise', '~> 4.7', '>= 4.7.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
 # Bootstrap gem for styling
 gem 'bootstrap', '~> 4.4.1'
+
 # font-awesome support
 gem "font-awesome-rails"
+
 # Authorization simplified
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
 # Kaminari Pagination gem
 gem 'kaminari', '~> 1.2'
+
+# Jquery ui rails gem
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
