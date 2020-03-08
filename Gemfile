@@ -51,6 +51,9 @@ gem 'kaminari', '~> 1.2'
 # Jquery ui rails gem
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
+# Coffee Script 
+gem 'coffee-rails'
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
