@@ -26,13 +26,15 @@
               poster: 'seagate.jpg'
             )
           %>
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
+          
           <%= render "shared/application_nav" %>
+          <br />
+          <br />
           <%= yield %>
           <%= render "shared/footer_nav" %>
         </div>
       </div>
+      <%= render 'shared/alerts' %>
       <%= source_helper("application") %>
     </div>
     
