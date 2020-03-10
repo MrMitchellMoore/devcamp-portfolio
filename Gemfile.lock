@@ -86,6 +86,7 @@ GEM
       image_processing (~> 1.1)
       mimemagic (>= 0.3.0)
       mini_mime (>= 0.1.3)
+    cocoon (1.2.14)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 5.2.0)
@@ -295,6 +296,7 @@ DEPENDENCIES
   bootstrap (~> 4.4.1)
   byebug
   carrierwave (~> 2.1)
+  cocoon (~> 1.2, >= 1.2.14)
   coffee-rails
   devise (~> 4.7, >= 4.7.1)
   dotenv-rails (~> 2.7, >= 2.7.5)

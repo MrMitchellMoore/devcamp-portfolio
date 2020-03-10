@@ -66,6 +66,9 @@ gem 'image_processing','~> 1.2'
 # Environtment variables for rails
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5', groups: [:development, :test]
 
+# Jquery nested forms manipulation
+gem 'cocoon', '~> 1.2', '>= 1.2.14'
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
