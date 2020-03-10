@@ -54,6 +54,18 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 # Coffee Script 
 gem 'coffee-rails'
 
+# Carrier Wave for Images
+gem 'carrierwave', '~> 2.1'
+
+# MiniMagick for image manipulation
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+
+# Use Active Storage variant
+gem 'image_processing','~> 1.2'
+
+# Environtment variables for rails
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5', groups: [:development, :test]
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
@@ -81,5 +93,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# Use Active Storage variant
-# gem 'image_processing','~> 1.2'
+
