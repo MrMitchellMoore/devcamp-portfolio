@@ -2,7 +2,7 @@
 <div class="container porfolio-container">
 	<div class="row">
 		<div class="col-sm-8 col-md-7">
-			<%= image_tag(@portfolio_item.thumb_image_url, size: "500x500") %>
+			<%= image_tag portfolio_img(@portfolio_item.thumb_image, 'thumb'), width: '100%' %>
 		</div>
 		<div class="col-sm-4 col-md-5">
 			
