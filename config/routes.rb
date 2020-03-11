@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'angular-items', to: 'portfolios#angular'
 
+  get 'tech-news', to: 'pages#tech_news'
+
   # Custom routes
   resources :blogs do
   	member do
