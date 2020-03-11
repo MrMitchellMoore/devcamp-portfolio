@@ -72,6 +72,9 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14'
 # Error notication library
 gem 'gritter', '~> 1.2'
 
+# Twitter gem
+gem 'twitter', '~> 7.0'
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 
