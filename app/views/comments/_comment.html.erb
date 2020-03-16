@@ -3,9 +3,16 @@
 		<div class="card-block">
 			<div class="row">
 				<div class="col-md-1">
+					<%= gravatar_helper comment.user %>
 				</div>
 				<div class="col-md-11">
-					<%= comment.content %>
+					<div>
+						<%= comment.content %>	
+					</div>
+					<div class="comment-attribution">
+						Comment posted by: <span class="comment-name"><%= comment.user.full_name %></span>
+						<%= distance_of_time_in_words(@blog.created_at, Time.now) %> ago
+					</div>
 				</div>
 			</div>
 		</div>
