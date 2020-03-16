@@ -75,6 +75,9 @@ gem 'gritter', '~> 1.2'
 # Twitter gem
 gem 'twitter', '~> 7.0'
 
+# Redis Database
+gem 'redis', '~> 4.1', '>= 4.1.3'
+
 # Custom gem made by mitchell moore
 gem 'moore_view_tool', git: 'https://github.com/MrMitchellMoore/moore_view_tool'
 

@@ -15,11 +15,17 @@ class User < ApplicationRecord
 
   validates_presence_of :name
 
+  has_many :comments, dependent: :destroy
+  
   def first_name
   	self.name.split.first	
   end
 
   def last_name
   	self.name.split.last
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
   end
 end
