@@ -61,7 +61,7 @@ gem 'carrierwave', '~> 2.1'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 # Use Active Storage variant
-gem 'image_processing','~> 1.2'
+gem 'image_processing','~> 1.12'
 
 # Environtment variables for rails
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5', groups: [:development, :test]
